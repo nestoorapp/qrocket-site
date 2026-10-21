@@ -1,11 +1,15 @@
-# Qrocket — tanıtım sitesi
+# QRoket — tanıtım sitesi
 
-Qrocket'in "pek yakında" sitesi. Tek dosya: `index.html` (dış bağımlılık yok, sadece Google Fonts).
+QRoket'in tanıtım sitesi. Derleme adımı yok; dosyalar olduğu gibi yayınlanır (Google Fonts dışında dış bağımlılık yok).
 
-- Bar, restoran, kafe ve pub için hareketli sahneler
-- AI garson demo konsolu
-- Pilot kayıt formu: `index.html` içindeki `FORM_ENDPOINT` değişkenine bir form servisi adresi (örn. Formspree) yazılınca çalışır.
+- `index.html`: sayfa, stiller ve sahnelerin animasyonları
+- `gizlilik.html`: gizlilik politikası
+- `lang-core.js`: dil seçimi (12 dil), sağdan sola yazım, yazı tipleri ve dil seçici
+- `i18n.js`: çeviriler (TR, EN, DE, ES, PT)
+- `lang/<kod>.js`: ek dil paketleri (RU, AR, PL, NL, FR, IT, FA); yalnızca o dil seçilince yüklenir
 
-Yayına almak için `index.html` dosyasını hosting'e yüklemek yeterli. GitHub Pages için: Settings → Pages → Branch: `main`, klasör: `/ (root)`.
+Dil, `?lang=<kod>` ile ya da sayfadaki seçiciyle değişir.
+
+Pilot başvuru formu, bilgileri doldurulmuş bir e-postayı `info@osplusstudio.com` adresine açar; sunucu gerekmez.
 
 osplusstudio tarafından geliştirilmektedir.
